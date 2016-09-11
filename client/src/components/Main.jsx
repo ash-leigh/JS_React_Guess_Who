@@ -1,5 +1,6 @@
 var React = require('react');
-var GameHeader = require('./GameHeader')
+var GameHeader = require('./GameHeader');
+var NewGame = require('./NewGame');
 
 var Main = React.createClass({
 
@@ -25,7 +26,10 @@ var Main = React.createClass({
 
   render: function(){
     return(
+      <div>
       <GameHeader />
+      <NewGame characters={this.state.characters}/>
+      </div>
     )
   }
 

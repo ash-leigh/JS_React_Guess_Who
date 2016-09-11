@@ -1,10 +1,11 @@
 var React = require('react');
+var CharacterList = require('./CharacterList');
 
 var NewGame = React.createClass({
 
   render: function(){
     return(
-      <div>new game</div>
+      <CharacterList characters={this.props.characters}></CharacterList>
     )
   }
 
